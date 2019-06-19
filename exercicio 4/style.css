@@ -1,0 +1,56 @@
+#effect {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+/* classes do exercicio 1 */
+
+.highlight {
+  background-color: red;
+  width: 200px !important;
+}
+
+.shrink {
+  background-color: blue;
+  width: 100px !important;
+}
+
+/* classes do exercicio 2 */
+.classe1 {
+  background-color: black;
+  color: yellow;
+}
+
+.classe2 {
+  background-color: yellow;
+  color: black;
+}
+
+/* classes do exercicio 3 & 5 */
+
+.exemplo1 {
+  background-color: green;
+}
+
+.exemplo2 {
+  background-color: pink;
+}
+
+.exemplo3 {
+  background-color: orange;
+}
+
+/* classes do exercicio 3 & 5 */
+
+.exemplo4 {
+  background-color: red;
+}
+
+.exemplo5 {
+  background-color: blue;
+}
+
+.exemplo6 {
+  background-color: gray;
+}
