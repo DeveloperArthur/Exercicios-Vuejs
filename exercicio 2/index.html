@@ -1,0 +1,21 @@
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+<div id="exercise">
+  <!-- 1) Mostrar um alerta quando o botão for clicado -->
+  <div>
+    <button @click="alerta">Show Alert</button>
+  </div>
+  <hr>
+  <!-- 2) Ouça o evento "keydown" e armazene o valor em uma propriedade de dados (dica: event.target.value fornece o valor) -->
+  <div>
+    <input type="text" v-on:keydown="teclas">
+    <p>{{ value }}</p>
+  </div>
+  <hr>
+  
+  <!-- 3) Ajuste o exemplo de 2) para só disparar se a "keydown" for a tecla ENTER -->
+  <div>
+    <input type="text" v-on:keydown.enter="teclas2">
+    <p>{{ value2 }}</p>
+  </div>
+</div>
