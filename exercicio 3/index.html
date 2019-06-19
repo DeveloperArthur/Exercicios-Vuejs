@@ -1,0 +1,17 @@
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+<div id="exercise">
+  <!-- 1) Mostre um "resultado" de "ainda não chegou", desde que "value" não seja igual a 37 - você pode alterar "value" com o botão. Imprimir 'pronto' assim que você fizer -->
+  <div>
+        <p>Current Value: {{ value }}</p>
+        <button @click="value += 5">Add 5</button>
+        <button @click="value += 1">Add 1</button>
+        <p>{{ result }}</p>
+    </div>
+  <hr>
+  <!-- 2) Observe as alterações no "resultado" e redefina o "valor" após 5 segundos (dica: setTimeout (..., 5000) -->
+  <div>
+        <input type="text">
+        <p>{{ value }}</p>
+    </div>
+</div>
