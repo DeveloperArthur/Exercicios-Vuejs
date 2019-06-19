@@ -5,7 +5,7 @@ new Vue({
         },
         computed: {
         	result: function() {
-          	return this.value == 37 ? 'done' : 'ainda não chegou';
+          	return this.value == 37 ? 'chegou' : 'ainda não chegou';
           }
         },
         watch: {
