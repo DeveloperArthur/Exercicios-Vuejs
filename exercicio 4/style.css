@@ -1,10 +1,9 @@
+/* classes do exercicio 1 */
 #effect {
   width: 100px;
   height: 100px;
   border: 1px solid black;
 }
-
-/* classes do exercicio 1 */
 
 .highlight {
   background-color: red;
@@ -28,7 +27,6 @@
 }
 
 /* classes do exercicio 3 & 5 */
-
 .exemplo1 {
   background-color: green;
 }
@@ -42,7 +40,6 @@
 }
 
 /* classes do exercicio 4 */
-
 .exemplo4 {
   background-color: red;
 }
@@ -53,4 +50,24 @@
 
 .exemplo6 {
   background-color: gray;
+}
+
+/* classes do exercicio 5 */
+[class*="valor1"] {
+  background: blue;
+}
+
+[class*="valor2"] {
+  background: red;
+}
+
+/* classes do exercicio 6 */
+.barraProgresso {
+    width: 80%;
+    height: 40px;
+    transition: width 500ms;
+}
+
+.text-center {
+    text-align: center;
 }
