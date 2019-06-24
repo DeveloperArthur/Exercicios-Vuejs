@@ -1,0 +1,28 @@
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+<div id="exercise">
+  <!-- 1) Conecte o botão para alternar a exibição dos dois parágrafos. Use ambos v-if e v-show e inspecione os elementos para ver a diferença -->
+  <div>
+    <button @click="alter">Toggle</button>
+    <p v-show="p1">You either see me ...</p>
+    <p v-if="p2">...or me</p>
+  </div>
+  <hr>
+  
+  <!-- 2) Saída de um <ul> de elementos de Array de sua escolha. Imprima também o índice de cada elemento. -->
+  <ul>
+    <li v-for="(n, index) in array">[{{ index }}] = {{ n }}</li>
+  </ul>
+  <hr>
+  
+  <!-- 3) Imprima todos os pares de valor-chave do seguinte objeto: {title: 'O Senhor dos Anéis', autor: 'J.R.R. Tolkiens ', livros:' 3 '}. Imprima também o índice de cada item. -->
+  <ul>
+    <li v-for="(obj, index) in object">{{ index }}: {{ obj }}</li>
+  </ul>
+  <hr>
+  
+  <!-- 4) Imprima o seguinte objeto (somente os valores) e também crie um loop aninhado para o array: {name: 'TESTOBJECT', data: [1.67, 1.33, 0.98, 2.21]} (dica: use v-for e v-if para Alcançar isso) -->
+  <ul>
+    <li v-for="(n, index) in object2" v-if="index == 'data'">{{ n }}</li>
+  </ul>
+</div>
