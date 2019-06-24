@@ -29,14 +29,19 @@
 
   <!-- 5) Repita 3) mas agora com valores para estilos (em vez de nomes de classes). Anexar os respectivos estilos -->
   <div>
-    <input type="text">
-    <div></div>
+    <input type="text" v-model="ex5">
+    <div :class="ex5">{{ ex5 }}</div>
   </div>
   <hr>
 
   <!-- 6) Crie uma barra de progresso simples com ligações setInterval e style. Comece clicando no botão abaixo -->
-  <div>
-    <button>Start Progress</button>
-    <div></div>
-  </div>
+  <div class="barraProgresso">
+    <button @click="addProgresso">Start Progress</button>
+    <div
+      class="barraProgresso text-center"
+      style="background-color: green; color: white;" 
+      :style="{width: barra + '%'}">
+        {{ barra }}
+    </div>
+  </div>  
 </div>
