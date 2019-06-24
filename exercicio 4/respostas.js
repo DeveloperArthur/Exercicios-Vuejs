@@ -6,7 +6,9 @@ new Vue({
     meuArray: [ 'classe1', 'classe2'],
     ex3: 'exemplo1',
     ex4: 'exemplo4',
-    ver: ''
+    ver: '',
+    ex5: 'valor1',
+    barra: 0
   },
   methods: {
   	StartEffect: function(){
@@ -19,6 +21,15 @@ new Vue({
           this.aux--;
         }
 			}, 500);
-  	}
+  	},
+    addProgresso: function(){
+    	console.log(this.barra);
+    	setInterval(() => {
+      	if(this.barra >= 100){
+        	this.barra = 0;
+        }
+      }, 2000);
+      this.barra += 10;
+    }
   }
 });
